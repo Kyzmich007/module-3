@@ -1,28 +1,36 @@
 html {
   box-sizing: border-box;
 }
+
 *,
 *::before,
 *::after {
   box-sizing: inherit;
 }
+
+.container {
+  width: 900px;
+  margin: 0 auto;
+}
+
 nav {
-  width: 1200px;
+  width: 900px;
   padding: 74px 0 100px;
 }
-.site-menu {
+
+.site-navigation {
   list-style: none;
-  width: 900px;
   margin: 0 auto;
   padding: 0 164px;
 }
-.site-menu li {
+.site-navigation li {
   display: inline-block;
   margin-right: 102px;
 }
-.site-menu li:last-child {
+.site-navigation li:last-child {
   margin-right: 0;
 }
+
 a {
   font-family: "Playfair Display", serif;
   font-style: normal;
@@ -35,16 +43,20 @@ a:hover,
 a:focus {
   color: #03a9f4;
 }
-.container {
-  width: 1200px;
-  padding: 0 150px;
+
+h3,
+a {
+  text-transform: uppercase;
+}
+
+main {
+  font-size: 0;
 }
 .article-block {
   display: inline-block;
   width: 420px;
-  margin-right: 56px;
+  margin-right: 60px;
   margin-bottom: 130px;
-  /* font-size: 0; */
 }
 .article-block:nth-child(even) {
   margin-right: 0;
@@ -79,9 +91,10 @@ a:focus {
   color: #626262;
   margin: auto;
 }
+
 footer {
-  width: 1200px;
-  padding: 52px 530px 52px 510px;
+  margin: 0 auto;
+  padding: 52px 380px 52px 360px;
 }
 .button {
   font-family: "Playfair Display", serif;
@@ -93,7 +106,6 @@ footer {
 .button {
   display: inline-block;
   border: solid 1px #626262;
-  margin: auto;
   width: 164px;
   height: 60px;
   padding: 18px 32px;
